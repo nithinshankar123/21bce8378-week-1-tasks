@@ -10,9 +10,10 @@
             height: 350px;
             border: 2px solid black;
             display: flex;
+            overflow: hidden;
         }
         
-        .hover {
+        #hover1, #hover2,#hover3,#hover4 {
     width: 50px;
     height: 50px;
     
@@ -20,6 +21,10 @@
     border-radius: 0px 5px 5px 0px;
     margin-top: 10px;
     cursor: pointer;
+    margin-left: -30px;
+}
+#hover1:hover, #hover2:hover,#hover3:hover,#hover4:hover{
+margin-left: 0px;
 }
 
 
@@ -29,10 +34,10 @@
 <body>
     <div class="container">
         <div style="display: flex; flex-direction: column; align-items: center;">
-            <button class="hover" style="background-color: green;margin-top: 30px;"></button>
-            <button class="hover" style="background-color: rgb(116, 170, 200);"></button>
-            <button class="hover" style="background-color: rgb(255, 117, 63);"></button>
-            <button class="hover" style="background-color: rgb(71, 56, 50);"></button>
+            <button id="hover1" style="background-color: green;margin-top: 30px;color: aliceblue;" >Nithin</button>
+            <button id="hover2" style="background-color: rgb(116, 170, 200);color: aliceblue;">Revi</button>
+            <button id="hover3" style="background-color: rgb(255, 117, 63);color: aliceblue;">Trinad</button>
+            <button id="hover4" style="background-color: rgb(71, 56, 50);color: aliceblue;">Ram</button>
         </div>
         
         <div style="margin-left: 30px;">
